@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="headernav.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.column {
+    float: right;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(247, 104, 104, 0.2);
+    margin: 8px;
+}
+
+.about-section {
+    padding: 10px;
+    text-align: center;
+    background-color: #858c9a;
+    color: white;
+    height: 100px;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.title {
+    color: rgb(204, 142, 142);
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.column:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.container {
+    position: sticky;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+    </style>
+
+</head>
+
+<body>
+  <header class="head2" tabindex="2">
+
+    <div>
+        <div class="side-bar">
+            <span class="material-symbols-outlined" id="menu">menu</span>
+         </div>
+
+         <ul class="nav_fill" >
+
+            <li class="nav-list "><a href="./home.html" >  Home</a> </li>
+            <li class="nav-list"><a href="./about.html" style="color: rgb(245, 8, 8);border-bottom: #ff0000;">About</a> </li>
+            <li class="nav-list"><a href="./blog.html">Blog</a></li>
+            <li class="nav-list"><a href="./product.html">Products</a></li>
+           
+     </ul>
+    </div>
+
+     <div class="logo-container">
+         <a href="#" style="display: flex;text-decoration: none;">
+              <div><img class="logo-image-1" src="./logo in png form.png" alt="" >
+             </div>
+             <div>
+                 <h1 class="logo" style="font-family: Faster One;font-size: 25px;">WIFI F'n</h1>
+             </div>
+         </a>
+     </div>
+
+     <div class="search-container">
+         <a href="./search.html"><i class="fa-solid fa-magnifying-glass" id="src"></i></a>
+         <i class="fa-solid fa-cart-shopping"></i>
+         <i class="fa-regular fa-heart"></i>
+         <i class="fa-solid fa-bag-shopping"></i>
+         <a href="./user.html"><i class="fa-regular fa-user" style="color: black;"></i></a>
+            
+            <ul class="dropdown-3" style="display: none;">
+                <li><a href="./login.html">Login <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="./signup.html">Signup <i class="fa-solid fa-right-to-bracket"></i></a></li>
+            </ul>
+            </i>
+         
+     </div>
+
+ </header>
+
+    <div class="about-section">
+        <br>
+        <h1 style="text-align:center;color: #474e5d;margin-top: 50px;background-color: #7dcb65;">About Us Page</h1>
+      </div>
+      <section>
+      <h2 style="text-align:center">Our Team</h2><br>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="./WhatsApp Image 2023-09-04 at 20.43.01.jpg" alt="Jane" style="width:450px;height:400px;">
+            <div class="container">
+              <h2>Karthigeyan S</h2>
+              <p class="title">CEO & Founder</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>Karthigeyan.s2022@vitstudnet.ac.in</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="./WhatsApp Image 2023-09-04 at 20.34.32.jpg" alt="Mike" style="width:450px;height:400px;">
+            <div class="container">
+              <h2>Barath R K</h2>
+              <p class="title">Art Director</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>barath.r.k2022@vitstudnet.ac.in</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="./WhatsApp Image 2023-09-04 at 20.41.55.jpg" alt="John" style="width:450px;height:400px;padding: 10px;">
+            <div class="container">
+              <h2>Karthikeyan R</h2>
+              <p class="title">Designer</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>KarthiKeyan.r2022@vitstudnet.ac.in</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div> 
+</section>
+</body>
+</html>

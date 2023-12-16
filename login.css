@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+.center{
+    /* position: absolute;
+    top: 23%;
+    left: 36%;
+    /* box-shadow: 1000px solid white ; */
+    /* width: 400px;
+    height: 400px; */
+    /* opacity: 1; */
+    /* border-radius: 10px; */ 
+        position: relative;
+        width: 400px;
+        box-shadow: 0 0 3px 0 gba(0,0,0,0.3);
+        opacity: 1;
+        box-shadow: 0px 0px 10px 0px rgba(242, 103, 103, 0.9);
+        padding: 25px;
+        margin: 9.5% auto;
+        text-align: center;
+        border-radius: 20px;
+        background-color: rgba(0,0,0,0.7);
+}
+@media screen and (max-width: 480px) {
+    .center{
+        margin: 30% auto;
+        margin-left: -20px;
+    }
+    
+}
+.input span{
+    color: red;
+    float: left;
+    margin-left: 10px;
+}
+input:focus{
+    outline: none;
+    border: none;
+}
+video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: -0px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,500;1,400&family=Gruppo&family=Heebo:wght@500&family=IBM+Plex+Mono:wght@600&family=Josefin+Sans:wght@700&family=Kanit:wght@300&family=Mochiy+Pop+One&family=Monoton&family=Poppins&family=Raleway:wght@500&family=Rowdies:wght@300&family=Space+Grotesk:wght@500&family=Tilt+Prism&family=Ubuntu:wght@700&display=swap');
+
+h1{
+  font-style: uppercase;
+font-family: 'Monoton', cursive;
+}
+.center:hover{
+    cursor: pointer;
+    /* transform: scale(1.1); */
+    box-shadow: 10px 10px 100000px 10px rgb(226, 34, 34);
+}
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    color: #e9f4fb;
+    border-bottom: 1px solid silver;
+}
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 12px 0;
+}
+.txt_field{
+    margin-bottom: 20px;
+    padding-left: 20px;
+    width: 300px;
+    height: 30px;
+    border-radius: 8px;
+}
+.txt_field:hover{
+    border-width: 3px;
+    border-color: #2f82d5;
+}
+.passw{
+    margin-top: 10px;
+}
+.pass{
+    margin: 5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+.pass:hover{
+    text-decoration: underline;
+}
+ input[type="submit"]{ 
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    /* outline: none; */
+}
+input[type="submit"]:hover{
+    border-color: #2691d9;
+    transition: .5s;
+}
+.signup_link{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+.signup_link a{
+    
+    color: #2691d9;
+    text-decoration: none;
+}
+.signup_link a:hover{
+    text-decoration: underline;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,500;1,400&family=Gruppo&family=Heebo:wght@500&family=IBM+Plex+Mono:wght@600&family=Josefin+Sans:wght@700&family=Kanit:wght@300&family=Mochiy+Pop+One&family=Monoton&family=Nabla&family=Poppins&family=Raleway:wght@500&family=Rowdies:wght@300&family=Space+Grotesk:wght@500&family=Tilt+Prism&family=Ubuntu:wght@700&display=swap');
+
+.signup_link #n{
+    padding-top: 10px;
+    margin-top: 10px;
+    
+}
+#n,.pass{
+    
+font-family: 'Josefin Sans', sans-serif;
+    color: azure;
+}

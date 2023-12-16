@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,500;1,400&family=Gruppo&family=Heebo:wght@500&family=Josefin+Sans:wght@700&family=Kanit:wght@300&family=Poppins&family=Tilt+Prism&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,500;1,400&family=Gruppo&family=Heebo:wght@500&family=Josefin+Sans:wght@700&family=Kanit:wght@300&family=Poppins&family=Rowdies:wght@300&family=Tilt+Prism&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Fira+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="icon" href="./logo in png form.png">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style1.css"> 
+    <link rel="stylesheet" href="./style3.css">
+    <link rel="stylesheet" href="headernav.css">
+    <link rel="stylesheet" href="cookie.css">
+</head>
+
+    <body>
+        <header class="head2" tabindex="2">
+
+            <div>
+                <div class="side-bar">
+                    <span class="material-symbols-outlined" id="menu">menu</span>
+                 </div>
+    
+                 <ul class="nav_fill" >
+    
+                    <li class="nav-list "><a href="./home.html" style="color: rgb(245, 8, 8);border-bottom: #ff0000;">  Home</a> </li>
+                    <li class="nav-list"><a href="./about.html">About</a> </li>
+                    <li class="nav-list"><a href="./blog.html">Blog</a></li>
+                    <li class="nav-list"><a href="./product.html">Products</a></li>
+                   
+             </ul>
+            </div>
+     
+             <div class="logo-container">
+                 <a href="#" style="display: flex;text-decoration: none;">
+                      <div><img class="logo-image-1" src="./logo in png form.png" alt="" >
+                     </div>
+                     <div>
+                         <h1 class="logo" style="font-family: Faster One;font-size: 25px;">WIFI F'n</h1>
+                     </div>
+                 </a>
+             </div>
+    
+             <div class="search-container">
+                 <a href="./search.html"><i class="fa-solid fa-magnifying-glass" id="src"></i></a>
+                 <i class="fa-solid fa-cart-shopping"></i>
+                 <i class="fa-regular fa-heart"></i>
+                 <i class="fa-solid fa-bag-shopping"></i>
+                 <a href="./user.html"><i class="fa-regular fa-user" style="color: black;"></i></a>
+                    
+                    <ul class="dropdown-3" style="display: none;">
+                        <li><a href="./login.html">Login <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                        <li><a href="./signup.html">Signup <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                    </ul>
+                    </i>
+                 
+             </div>
+    
+         </header>
+    
+    
+    
+    
+    
+        <script>
+            let nav = document.querySelector(".side-bar");
+            let links = document.querySelector(".nav_fill");
+            nav.addEventListener('click',()=>{
+            links.classList.toggle("nav-show") 
+            var x = document.getElementById("menu"); })
+    
+    
+            x.addEventListener('click', () => {
+        x.style.transform = "rotate(0deg)";
+    });
+            
+               
+        </script>
+
+        </header>
+       
+        <div class="background">
+            <p class="pa1">
+                <h1 id="h1" style="font-weight: 700;">Welcome to <br><span style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">WIFI F'n</span> <br> Shop Now!!</h1><br>
+                <p id="p1" style="margin-left: 20px; font-family:'Rowdies ', 'Arial Narrow', Arial, sans-serif;">
+                    <span class="company">WIFI F'n</span> is an online store that offers great deals on thousands <br>of products for you to explore.
+                </p>
+            </p>
+            <video autoplay muted loop>
+            <source src="./BOSS Menswear Collection by HUGO BOSS _ Classic Men's Fashion.mp4" type="video/mp4">
+        </video>
+        </div>
+        <main class="main-all">
+
+            <section>
+                
+                <div class="circle-icons-products">
+                    <div>
+                        <img src="https://images-static.nykaa.com/uploads/6792fbdf-94b0-4135-9239-c24088edebdb.gif?tr=w-120,cm-pad_resize" alt="sale" loading="eager" srcset="https://images-static.nykaa.com/uploads/6792fbdf-94b0-4135-9239-c24088edebdb.gif?tr=w-240,cm-pad_resize 2x">
+                        <p align="center">Sale</p>
+                    </div>
+                    <div>
+                        <img src="https://images-static.nykaa.com/uploads/9e9d5036-7add-4aa8-872b-30c4e8b25912.jpg?tr=w-120,cm-pad_resize" alt="men" loading="eager" srcset="https://images-static.nykaa.com/uploads/9e9d5036-7add-4aa8-872b-30c4e8b25912.jpg?tr=w-240,cm-pad_resize 2x">
+                        <p align="center">Men</p>
+                    </div>
+                    <div>
+                        <img src="https://images-static.nykaa.com/uploads/97c113b6-935f-44e8-b8b5-4f886fb018bb.jpg?tr=w-120,cm-pad_resize" alt="kids" loading="eager" srcset="https://images-static.nykaa.com/uploads/97c113b6-935f-44e8-b8b5-4f886fb018bb.jpg?tr=w-240,cm-pad_resize 2x">
+                        <p align="center">Kids</p>
+                    </div>
+                    <div>
+                        <img src="https://images-static.nykaa.com/uploads/db5d7cb9-5743-4a4e-9d7d-c42b109159eb.jpg?tr=w-120,cm-pad_resize" alt="home" loading="eager" srcset="https://images-static.nykaa.com/uploads/db5d7cb9-5743-4a4e-9d7d-c42b109159eb.jpg?tr=w-240,cm-pad_resize 2x">
+                        <p align="center">Home</p>
+                    </div>
+                    <div>
+                        <img src="https://images-static.nykaa.com/uploads/9a9b16c4-a6cf-4305-a250-fc35c129a43a.jpg?tr=w-120,cm-pad_resize" alt="indianwear" loading="eager" srcset="https://images-static.nykaa.com/uploads/9a9b16c4-a6cf-4305-a250-fc35c129a43a.jpg?tr=w-240,cm-pad_resize 2x">
+                        <p align="center">Indian Wear</p>
+                    </div>
+                    <div>
+                        <img src="https://images-static.nykaa.com/uploads/d3ca6648-c48a-4369-a23e-36c43ab1109f.jpg?tr=w-120,cm-pad_resize" alt="westernwear" loading="eager" srcset="https://images-static.nykaa.com/uploads/d3ca6648-c48a-4369-a23e-36c43ab1109f.jpg?tr=w-240,cm-pad_resize 2x">
+                        <p align="center">Western Wear</p>
+                    </div>
+                    <div>
+                        <img src="https://images-static.nykaa.com/uploads/b5c3d918-2e1e-4913-8349-bab8182d88ae.jpg?tr=w-120,cm-pad_resize" alt="footwear" loading="eager" srcset="https://images-static.nykaa.com/uploads/b5c3d918-2e1e-4913-8349-bab8182d88ae.jpg?tr=w-240,cm-pad_resize 2x">
+                        <p align="center">Foot Wear</p>
+                    </div>
+                    <div>
+                        <img src="https://images-static.nykaa.com/uploads/bb8a7d48-0a24-4456-9bd8-cf395448d07f.jpg?tr=w-120,cm-pad_resize" alt="winterwear" loading="eager" srcset="https://images-static.nykaa.com/uploads/bb8a7d48-0a24-4456-9bd8-cf395448d07f.jpg?tr=w-240,cm-pad_resize 2x">
+                        <p align="center">Winter Wear</p>
+                    </div>
+                    <div>
+                        <img src="https://images-static.nykaa.com/uploads/9147f43e-1070-42d7-a2d4-cfe67a5a0e2f.jpg?tr=w-120,cm-pad_resize" alt="jewellery" loading="eager" srcset="https://images-static.nykaa.com/uploads/9147f43e-1070-42d7-a2d4-cfe67a5a0e2f.jpg?tr=w-240,cm-pad_resize 2x">
+                        <p align="center">Jewellery</p>
+
+                    </div>
+                    <div>
+                        <img src="https://images-static.nykaa.com/uploads/c609d126-f57c-4c17-a5fa-f54a13118460.jpg?tr=w-120,cm-pad_resize" alt="bags" loading="eager" srcset="https://images-static.nykaa.com/uploads/c609d126-f57c-4c17-a5fa-f54a13118460.jpg?tr=w-240,cm-pad_resize 2x">
+                        <p align="center">Bags</p>
+                    </div>
+                    <div>
+                        <img src="https://images-static.nykaa.com/uploads/3e7976ea-c467-4593-ba49-43bd3d9f67f9.jpg?tr=w-120,cm-pad_resize" alt="lingerie" loading="eager" srcset="https://images-static.nykaa.com/uploads/3e7976ea-c467-4593-ba49-43bd3d9f67f9.jpg?tr=w-240,cm-pad_resize 2x">
+                        <p align="center">Lingerie</p>
+                    </div>
+                </div>
+
+
+            </section>
+        <div class="about">
+            <div class="about-img">
+                <a href="#" ><img src="https://i.ibb.co/Prstppv/photo-1605902711834-8b11c3e3ef2f.jpg" alt="photo-1605902711834-8b11c3e3ef2f" border="0" class="img-ab"></a>
+            </div>
+            <div class="about-text">
+                <p><span>About</span><br> WIFI Fashion BoutiQue is an online store based in Vellore, Tamil Nadu, India. We are dedicated to providing our customers with a seamless shopping experience. With a wide range of products available, we strive to meet the diverse needs and preferences of our valued customers. Our team is committed to delivering exceptional customer service and ensuring that every purchase is a positive and enjoyable experience. Whether you're looking for the latest fashion trends, home essentials, or unique gifts, we've got you covered. Shop with confidence at BIG Commrce and discover the convenience of online shopping at its best.</p>
+            </div>
+        </div>
+        <div id="consent-popup" class="hidden">
+            <p>By using this site you agree to our <a href="#">Terms and Conditions</a>.
+                Please <a id="accept" href="#">Accept</a> these before using the site.
+            </p>
+        </div>
+
+        <section class="for">
+            
+            <div class="womens-img">
+                <img src="https://www.modaoperandi.com/assets/uploads/site_display/modules/images/51236183-7417-4290-bcd6-dd932661253c.jpeg" alt="">
+                <div class="all-text" style="color:whitesmoke;" id="text-w">Women</div>
+            </div>
+            <div class="mens-img">
+                <img src="https://img.mytheresa.com/1094/1236/90/jpeg/catalog/product/cd/P00823143_b1.jpg" alt="">
+                <div class="all-text" style="color: black;">Men</div>
+            </div>
+            <div class="kids-img">
+                <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F5e%2F79%2F5e79eef2bb24bb5a673daa8a1f579717c46e3d9d.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="">
+                <div class="all-text" style="color: black;">Kids</div>
+            </div>
+            <div class="home-img">
+                <img src="https://lp2.hm.com/hmgoepprod?source=url[https://www2.hm.com/content/dam/global_campaigns/season_08/home/7078-holiday/7078c/department-teasers/7078C-decorations-room-3x2-1.jpg]&scale=size[960]&sink=format[jpeg],quality[80]" alt="">
+                <div class="all-text" style="color:whitesmoke;">Home</div>
+            </div>
+
+        </section>
+
+        <br>
+       
+        <div class="free-trial" style="margin-top: 30px;width: 100%;">
+            <marquee behavior="alternate" direction="left" class="flow"><a href="#" class="flow-container">Start your free trial &rarr;    Start your free trial &rarr;    Start your free trial &rarr;  Start your free trial &rarr;    Start your free trial &rarr;    Start your free trial &rarr;    Start your free trial &rarr;    Start your free trial &rarr;    Start your free trial &rarr;</a></marquee>
+
+        </div>
+        <section class="item-img">
+            <h1 id="h2" style=" margin-bottom: 30px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">For u..</h1>
+            <div class="item-imgg">
+                <img src="https://media.matchesfashion.com/apps/Content/Homepage/Promos/a9c79dd0-c630-4cd3-af10-d6be2f4a44a8--promo-5-small-DESKTOP_result_1.jpg?width=450&quality=90" alt="" id="it">
+                <img src="https://media.matchesfashion.com/apps/Content/Homepage/Promos/eace6ce5-8c1e-4d0c-b298-2f6abb4dec8f--promo-1-medium-DESKTOP.jpg?width=800&quality=90" alt="" id="it">
+                <img src="https://images.asos-media.com/products/asos-design-extreme-oversized-shirt-in-large-scale-check/203488630-1-green?" alt="" id="it"> 
+
+            </div>
+            <div class="item-imgg">
+                <img src="https://media.matchesfashion.com/apps/Content/Homepage/Promos/d78718ee-33b6-44b0-bc0f-13e8b590079d--promo-4-small-DESKTOP.jpg?width=450&quality=90" alt="" id="it">
+                <img src="https://media.matchesfashion.com/apps/Content/Homepage/Promos/8d66e6d3-6338-47f7-8fbf-d9ccfbae531d--promo-2-medium-DESKTOP%252017.25.01.jpg?width=800&quality=90" alt="" id="it">
+                <img src="https://content.asos-media.com/-/media/homepages/ww/2023/november/13-gbl/ww/ww_global_cozy_core_moment_870x1110.jpg" alt="" id="it">
+              
+            </div>
+        </section>
+
+        
+            <div class="sign">
+                <p style="padding-top: 40px;">See all that you can accomplish with WIFI F'n</p>
+                <a href="./signup.html"><input type="submit" value="Signup free" class="box-sign"></a>
+                <a href="#"><input type="submit" value="Talk to BC" class="box-sign" style="margin-left: 20px;"></a>
+            </div>
+
+            
+            <br>
+            <div class="img-div-she">
+              <div class="content-poster">
+                <div class="ls">
+                    <span id="on">AUTUMN ON TOP</span> <br>
+                    <span id="on-d"> LAYER UP</span><br>
+                    <a href=""><button type="button" class="button-light"><span id="ar">←</span> SHOP LIGHT KNITS 
+                </button></a>
+                    <a href=""><button type="button" class="button-sweat">SHOP <span id="ar">→</span>
+                        <br>SWEATSHIRTS </button></a>
+                </div>
+              </div>
+
+                <img src="https://images.hugoboss.com/is/image/hugobosscsprod/230824_BMO_Layers_1920x880?%24large%24&fmt=webp&align=0,-1&fit=crop,1&ts=1694596374101&op_brightness=-20&qlt=80&wid=1440&hei=660" alt="" class="lup">
+            </div>
+            <!-- ========== Start image with price ========== -->
+
+            <section style="display: flex;overflow-x:scroll;" id="selection-container">
+                <div class="card-text-start">
+                    <a href="view.html" target="_self">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/81mh9OHBMdL._AC_SY550_.jpg" alt="Title" >
+        <div class="card-body">
+          <h4 class="card-title">Symbol Women's Acrylic Casual Pullover Sweater <br>
+           <div class="star-icn">
+            <i class="fa-solid fa-star checked bg-light"></i>
+            <i class="fa-solid fa-star checked bg-light"></i>
+            <i class="fa-solid fa-star checked bg-light"></i>
+            <i class="fa-solid fa-star bg-light"></i>
+            <i class="fa-solid fa-star bg-light"></i>
+           </div>
+          </h4>
+          <p class="card-text"><span style="color: red;font-size: 30px;"><s>-62%</s></span> <span style="font-size: 32px;"><sup>&#8377;</sup>729</span>
+          <br>MRP:&#8377;<s>1,999</s></p></p>
+        </div>
+      </div></a>
+
+                    <div class="card-text-start">
+                        <img class="card-img-top" src="https://assets.ajio.com/medias/sys_master/root/20230728/kkfd/64c3c553a9b42d15c9783dc0/-473Wx593H-469009897-blue-MODEL.jpg" alt="Title">
+                        <div class="card-body">
+                            <h4 class="card-title">Washed Jogger Jeans<br>
+                                <div class="star-icn">
+                                    <i class="fa-solid fa-star checked bg-light"></i>
+                                    <i class="fa-solid fa-star checked bg-light"></i>
+                                    <i class="fa-solid fa-star checked bg-light"></i>
+                                    <i class="fa-solid fa-star bg-light"></i>
+                                    <i class="fa-solid fa-star bg-light"></i>
+                                </div>
+                            </h4>
+                            <p class="card-text"><span style="color: red;font-size: 30px;"><s>-68%</s></span> <span style="font-size: 32px;"><sup>₹</sup>640</span>
+                                <br>MRP:&#8377;<s>1,999</s></p>
+                        </div>
+                    </div>
+                        <div class="card-text-start">
+                            <img class="card-img-top" src="https://assets.ajio.com/medias/sys_master/root/20230602/8IJf/647994fa42f9e729d718cf70/-473Wx593H-462631373-green-MODEL.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">Genuine Leather Collar-Neck Jacket with Insert Pockets <br>
+                                    <div class="star-icn">
+                                        <i class="fa-solid fa-star checked bg-light"></i>
+                                        <i class="fa-solid fa-star checked bg-light"></i>
+                                        <i class="fa-solid fa-star checked bg-light"></i>
+                                        <i class="fa-solid fa-star checked bg-light"></i>
+                                        <i class="fa-solid fa-star bg-light"></i>
+                                    </div>
+                                </h4>
+                                <p class="card-text"><span style="color: red;font-size: 30px;"><s>-67%</s></span> <span style="font-size: 32px;"><sup>₹</sup>858</span>
+                                    <br>MRP:&#8377;<s>2,599</s></p>
+                                </p>
+                            </div>
+                    </div>
+            </section>
+
+            <!-- <div style="display: flex;">
+    <div class="card-text-start">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/31uF8G2MZlL._SX342_SY445_.jpg" alt="Title" >
+        <div class="card-body">
+          <h4 class="card-title">Symbol Women's Acrylic Casual Pullover Sweater <br>
+           <div class="star-icn">
+            <i class="fa-solid fa-star checked bg-light"></i>
+            <i class="fa-solid fa-star checked bg-light"></i>
+            <i class="fa-solid fa-star checked bg-light"></i>
+            <i class="fa-solid fa-star bg-light"></i>
+            <i class="fa-solid fa-star bg-light"></i>
+           </div>
+          </h4>
+          <p class="card-text"><span style="color: red;font-size: 30px;"><s>-62%</s></span> <span style="font-size: 32px;"><sup>₹</sup>729</span><br>MRP:&#8377;<s>1,999</s></p>
+        </div>
+      </div>
+      <div class="card-text-start">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/81hIdbAISXL._UY879_.jpg" alt="Title" >
+        <div class="card-body">
+          <h4 class="card-title">Qube By Fort Collins Women's Parka Jacket <br>
+            <div class="star-icn">
+            <i class="fa-solid fa-star checked bg-light"></i>
+            <i class="fa-solid fa-star checked bg-light"></i>
+            <i class="fa-solid fa-star checked bg-light"></i>
+            <i class="fa-solid fa-star bg-light"></i>
+            <i class="fa-solid fa-star bg-light"></i>
+            </div>
+          </h4>
+          <p class="card-text"><span style="color: red;font-size: 30px;"><s>-55%</s></span> <span style="font-size: 32px;"><sup>₹</sup>1,079</span><br>MRP:&#8377;<s>1,999</s></p>
+        </div>
+      </div>
+      <div class="card-text-start">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/61RxI0CoheS._UY879_.jpg" alt="Title" >
+        <div class="card-body">
+          <h4 class="card-title">BE SAVAGE Women's Cute But Psycho Crop Hoodie Suitable for Sum & Win <br>
+            <div class="star-icn">
+              <i class="fa-solid fa-star checked bg-light"></i>
+            <i class="fa-solid fa-star checked bg-light"></i>
+            <i class="fa-solid fa-star checked bg-light"></i>
+            <i class="fa-solid fa-star checked bg-light"></i>
+            <i class="fa-solid fa-star bg-light"></i>
+            </div>
+          </h4>
+          <p class="card-text"><span style="color: red;font-size: 30px;"><s>-50%</s></span> <span style="font-size: 32px;"><sup>₹</sup>499</span>
+          <br>MRP:&#8377;<s>999</s></p>
+        </div>
+      </div>    
+  </div> -->
+            <!-- ========== End image with price ========== -->
+
+            <div class="loard-img">
+                <a href="./product.html"><button type="button" class="btn btn-primary " id="load-btn">Loard more...</button></a>
+            </div>
+
+            <div class="delivery">
+                <h1 class="free-del">FREE DELIVERY ON ALL ORDERS <sup>*</sup> <sub><span class="material-symbols-outlined" style="font-size: 60px;padding-left: 10px;" id="truck">
+        local_shipping 
+                </span>
+            </sub>
+        </h1>
+     </div>
+
+
+            <!-- ========== Start mens full view img ========== -->
+
+            <div class="img-div-he">
+                <img src="https://img.faballey.com/images/banner/334a28dc-cbfc-4da9-9f98-9260fcd1a049.jpg" alt="" class="fgf">
+            </div>
+            <!-- ========== End mens full view img ========== -->
+
+            <!-- ========== Start womens list of item ========== -->
+
+            <div style="display: flex;overflow-x: scroll;" id="selection-container-w">
+                <div class="card-text-start">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/31uF8G2MZlL._SX342_SY445_.jpg" alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title">Symbol Women's Acrylic Casual Pullover Sweater <br>
+                            <div class="star-icn">
+                                <i class="fa-solid fa-star checked bg-light"></i>
+                                <i class="fa-solid fa-star checked bg-light"></i>
+                                <i class="fa-solid fa-star checked bg-light"></i>
+                                <i class="fa-solid fa-star bg-light"></i>
+                                <i class="fa-solid fa-star bg-light"></i>
+                            </div>
+                        </h4>
+                        <p class="card-text"><span style="color: red;font-size: 30px;"><s>-62%</s></span> <span style="font-size: 32px;"><sup>₹</sup>729</span>
+                            <br>MRP:&#8377;<s>1,999</s></p>
+                    </div>
+                </div>
+                <div class="card-text-start">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/81hIdbAISXL._UY879_.jpg" alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title">Qube By Fort Collins Women's Parka Jacket <br>
+                            <div class="star-icn">
+                                <i class="fa-solid fa-star checked bg-light"></i>
+                                <i class="fa-solid fa-star checked bg-light"></i>
+                                <i class="fa-solid fa-star checked bg-light"></i>
+                                <i class="fa-solid fa-star bg-light"></i>
+                                <i class="fa-solid fa-star bg-light"></i>
+                            </div>
+                        </h4>
+                        <p class="card-text"><span style="color: red;font-size: 30px;"><s>-55%</s></span> <span style="font-size: 32px;"><sup>₹</sup>1,079</span>
+                            <br>MRP:&#8377;<s>1,499</s></p>
+                    </div>
+                </div>
+                <div class="card-text-start">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/61RxI0CoheS._UY879_.jpg" alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title">BE SAVAGE Women's Cute But Psycho Crop Hoodie Suitable for Sumer & Winter <br>
+                            <div class="star-icn">
+                                <i class="fa-solid fa-star checked bg-light"></i>
+                                <i class="fa-solid fa-star checked bg-light"></i>
+                                <i class="fa-solid fa-star checked bg-light"></i>
+                                <i class="fa-solid fa-star checked bg-light"></i>
+                                <i class="fa-solid fa-star bg-light"></i>
+                            </div>
+                        </h4>
+                        <p class="card-text"><span style="color: red;font-size: 30px;"><s>-50%</s></span> <span style="font-size: 32px;"><sup>₹</sup>499</span>
+                            <br>MRP:&#8377;<s>999</s></p>
+                        </p>
+                    </div>
+                </div>
+            </div><br>
+            <div class="loard-img">
+                <a href="./product.html"><button type="button" class="btn btn-primary " id="load-btn">Loard more...</button></a>
+            </div>
+          
+
+            <!--  ========== End womens list of item ========== -->
+            <!-- ===== ===== Start about ========== -->
+            <h1 id="h2" style="margin-left: 20px;padding-top: 18px;color: #09101c; margin-top: 30px;">Oᑌᖇ SᕮᖇᐯIᑕᕮS</h1>
+
+            <section class="image-container">
+            <div class="image-c">
+                <div class="image1"><img id="im1" src="https://i.ibb.co/f113SHN/photo-1486312338219-ce68d2c6f44d.jpg" alt="photo-1486312338219-ce68d2c6f44d" alt="404">
+                    <div class="online" style="display: block;">
+                        <p><span style="font-weight: 700;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        font-size: 20px;">Online Shopping Assistance</span><br> Expert guidance to enhance your online shopping <br>experience with our team. <br>
+                            <a href="#"><button type="button" class="more">More info</button></a>
+                        </p>
+                    </div>
+    
+                </div>
+    
+                <div class="image2"><img id="im2" src="https://i.ibb.co/Jz4N8Mn/photo-1586880244406-556ebe35f282.jpg" alt="404">
+                    <div class="fast" style="display: block;">
+                        <p><span style="font-weight: 700;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: 20px;">Fast and Reliable Deliveries </span><br> Timely and hassle-free delivery of your purchases right to <br>your doorstep. <br>
+                            <a href="#"><button type="button" class="more">More info</button></a></p>
+    
+                    </div>
+                </div>
+            </div>
+                <div class="image3"><img id="im3" src="https://i.ibb.co/bPm6SHQ/photo-1475275083424-b4ff81625b60.jpg" alt="404">
+                    <div class="secure" style="display: block;">
+                        <p><span style="font-weight: 700;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        font-size: 20px;">24/7 Customer Support </span><br> Dedicated round-the-clock assistance to address all <br> your queries and concerns. <br>
+                            <a href="#"><button type="button" class="more">More info</button></a></p>
+                    </div>
+            </section>
+    
+            <div class="FSC1">
+                <section class="FSC" id="f" style="padding: 20px;">
+    
+                    <span class="material-symbols-outlined" >cached</span>
+    
+                    <span class="material-symbols-outlined" >lock_person</span>
+    
+                    <span class="material-symbols-outlined" >info</span>
+    
+                </section>
+                <section class="FSC" style="margin-top: 0px;padding-left: 10px;">
+                    <div class="free">Free shipping and return</div>
+                    <div class="security">Secured payments</div>
+                    <div class="customer">Customer service</div>
+                </section>
+            </div>
+
+            <!-- ========== End about ========== -->
+            <!-- <section class="Shop-by" >
+                <h1>Shop By Category</h1>
+                <div class="iner-shopby">
+                    <div class="image-shop-by"><img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/0dedd7c2-6c01-4ab0-a907-8928e56066d41690787339184-Shop-By-Category_HP-4_02.jpg" alt="" class="img-by"></div>
+                <div class="image-shop-by"><img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/bfab4827-0ea6-4a5b-8b8d-167d497ae78e1690787339167-Shop-By-Category_HP-4_03.jpg" alt="" class="img-by"></div>
+                <div class="image-shop-by"><img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/c61cfcfb-749f-4d8e-a318-0ea8f8705a1c1690787339442-Shop-By-Category_HP-4_04.jpg" alt="" class="img-by"></div>
+                <div class="image-shop-by"><img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/a50c2dec-c5bc-46f3-b754-294fb46c61971690787339077-Shop-By-Category_HP-4_05.jpg" alt="" class="img-by"></div>
+                <div class="image-shop-by"><img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/da4059bf-14f1-4928-b5b9-be8719887b8e1690787339149-Shop-By-Category_HP-4_06.jpg" alt="" class="img-by"></div>
+                <div class="image-shop-by"><img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/3a804edc-ce57-4eb5-bb6a-493d458973661690787338896-Shop-By-Category_HP-4_07.jpg" alt="" class="img-by"></div>
+                <div class="image-shop-by"><img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/84870fc6-4805-41a4-b9eb-a8d7adb6c0d21690787339128-Shop-By-Category_HP-4_08.jpg" alt="" class="img-by"></div>
+                <div class="image-shop-by"><img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/069d06bc-1b75-43f4-b8d1-1ec46193eb021690787339028-Shop-By-Category_HP-4_09.jpg" alt="" class="img-by"></div>
+                <div class="image-shop-by"><img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/dd262b36-3a75-464a-97b5-235984080d851690787338916-Shop-By-Category_HP-4_11.jpg" alt="" class="img-by"></div>
+                <div class="image-shop-by"><img src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/7/31/d26e5ed5-d846-4692-88a5-54ab7d79203b1690787339203-Shop-By-Category_HP-4_12.jpg" alt="" class="img-by"></div>
+                </div>
+
+            </section> -->
+            
+        </main>
+
+            <footer style="background-color: black;">
+                <div class="contact-container">
+                    <div class="contact-text">
+                        <p><span style="font-weight: 700;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 30px;color: #ff0000;">Contact Us Today </span><br><br> &nbsp;&nbsp;&nbsp; Complete the form below to get in touch with us. <br> We are here to help and answer any questions <br> you may have about our products or services.</p>
+                    </div>
+                    <div class="contact-form">
+                        <form action="get" style="background-color: black;">
+
+                            <table border="0">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" placeholder="Name" required class="name-tb"></td>
+                                    <td colspan="2"><input type="text" placeholder="Email" readonly class="email-tb"></td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">Message</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><textarea name="" id="" cols="30" rows="" placeholder="Message..."></textarea></td>
+
+                                </tr>
+                                <tr>
+                                    <td colspan="3" align="center" style="padding-top: 10px;"><button type="button" class="btn btn-primary p-2 m-lg-2">Submmit</button></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <div class="foot">
+                    <div>
+                        <caption> BIG Commerce</caption>
+                        <table border="0">
+                            <tr>
+                                <td><a href="#">Who We Are</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Join Our Team</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Terms &amp; Conditions</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">We Respect Your Privacy</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Fees &amp; Payments</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Returns &amp; Refunds Policy</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Promotions Terms &amp; Conditions</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <caption>Help</caption>
+                        <table border="0">
+                            <tr>
+                                <td><a href="#">Track Your Order</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Frequently Asked Questions</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Returns</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Cancellations</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Payments</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Customer Care</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">How Do I Redeem My Coupon</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <caption>Shop by</caption>
+                        <table border="0">
+
+                            <tr>
+                                <td><a href="#">Men</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Women</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Kids</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Indie</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Stores</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">New Arrivals</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Brand Directory</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Home</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Collections</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <caption>Follow us on</caption>
+                        <table border="0">
+                            <tr>
+                                <td><a href="https://www.facebook.com/">Facebook</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.instagram.com/">Instagram</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.google.com/">Google</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.twitter.com/">Twitter</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.youtube.com/">Youtube</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="foot1">
+                    <hr style="color: rgb(38, 223, 223);height: 15px;">
+                    <a href="#"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-beat fa-2x" style="color: #ff00ff;"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter fa-beat fa-2x" style="color: #aee9ff;"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube fa-beat fa-2x" style="color: #ff0000;"></i></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin fa-beat fa-2x" style="color: #2e497c;"></i></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp fa-beat fa-2x" style="color: #26d202;"></i></i></a>
+                    <a href="#"><i class="fa-brands fa-square-facebook fa-beat fa-2x" style="color: #010a6d;"></i></a>
+                    <div class="Apps" style="float: right;">
+                        <img class="play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" style="width: 200px;height: 80px; ">
+                    </a>
+                    <a href="#">
+                    <img class="play" src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-example-preferred.png" alt="Download on the App Store" style="border-radius: 10px;margin-left: 10px;width: 175px;height: 50px;">
+                    </a>
+                    </div>
+                    <div align="center">
+                        <hr style="color: rgb(248, 252, 252);width: 20%;">
+                    </div>
+                    <div>
+                        <p align="center" style="font-size: 100;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">© 2023 WIFI Fashion B. All rights reserved.</p>
+                    </div>
+                    <br>
+                    
+                </div>
+            </footer>
+
+            <script src="cookie.js"></script>
+            <script>
+                $(function () {
+                        $.scrollUp({
+                            scrollName: 'scrollUp', // Element ID
+                            topDistance: '300', // Distance from top before showing element (px)
+                            topSpeed: 600, // Speed back to top (ms)
+                            animation: 'fade', // Fade, slide, none
+                            animationInSpeed: 200, // Animation in speed (ms)
+                            animationOutSpeed: 200, // Animation out speed (ms)
+                            activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+                            scrollImg: true,
+                        });
+                    });
+            </script>
+            <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: block;bottom: 20px;
+            right: 20px;
+            width: 38px;
+            height: 38px;border: 2px solid black;border-radius: 50%;"> <i class="fa-solid fa-arrow-up" style="background-color: transparent; margin-left: 10px;margin-top: 6px; font-size: 22px;"></i></a>
+    </body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forgetpass</title>
+    <link rel="stylesheet" href="pass.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Fira+Sans:wght@600&display=swap" rel="stylesheet">
+
+    <!-- <style>
+        .get-otp {
+            width: 300px;
+            height: 40px;
+            border: 1px solid black;
+            font-size: 15px;
+
+        }
+
+        .get-otp:hover {
+            background-color: rgb(236, 32, 14);
+            color: white;
+            border: 1px solid red;
+            transition: .3s all ease-out;
+        }
+
+        .list-otp {
+            display: flex;
+            margin: 10px;
+        }
+
+        .otp {
+            font-size: 25px;
+            margin-right: 15px;
+            text-align: center;
+            border-radius: 100px;
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+    </style> -->
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+           <div class="logo" style="display: flex;">
+            <img src="./logo in png form.png" alt="" width="50px" height="50px"><span style="margin-top: 10px;font-size: 30px;font-family: Faster One;">WIFI F'n</span>
+           </div>
+            <h1>Forget Password</h1>
+            <hr>
+            <form action="forgetpass.html" method="post" onsubmit="return generateOTP()" onsubmit="return validForm()">
+                <input type="email" placeholder="Email" name="" id="email" onkeyup="validEmail()" class="email-container">
+                <span id="email-error"><i class="fa-solid fa-circle-minus" style="color: #070c14;"></i></span><br><br>
+                <input type="submit" value="Submit" class="submit-email">
+                <span id="otp-num">----</span>
+            </form>
+          <div class="container2">
+                <form action="./login.html" method="post" onsubmit="return VerifyOTP()">
+                    <label><b style="margin-left: 10px;">Enter the OTP:</b></label><br>
+                    <nav class="list-otp">
+                        <input type="text" size="20" required pattern="[0-9]*" maxlength="4" class="otp"
+                           placeholder="Enter OTP" onkeyup="return validFormVerification()"> <span id="otp-error"><i class="fa-solid fa-circle-minus" style="color: #070c14;"></i></span>
+                       
+                    </nav>
+                    <input type="submit" value="Submit" class="submit-otp">
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script>
+    var otpError = document.getElementById("otp-error");
+function validFormVerification() {
+    var otp = document.getElementsByClassName("otp")[0].value;
+    var OTP = document.getElementById("otp-num").innerHTML;
+    if (otp == "") {
+        otpError.innerHTML = "OTP is required";
+        return false;
+    }
+    
+    if (otp != OTP) {
+        otpError.innerHTML = "Invalid OTP";
+        return false;
+    }
+    if (otp.length < 4) {
+        otpError.innerHTML = "Invalid OTP";
+        return false;
+    }
+    otpError.innerHTML ='<i class="fa-regular fa-circle-check" style="color: #00ff00;"></i>';
+    getElementsByClassName("otp")[0].value.style.border = "2px solid green";
+    
+
+    return true;
+}
+
+        function VerifyOTP(){
+            if(!validFormVerification()){
+                return false;
+            }
+            return true;
+        }
+</script>
+
+
+    <script>
+        function generateOTP() {
+            alert("OTP generated successfully it will be valid for 60 seconds");
+            var digits = '0123456789';
+            let OTP = '';
+            for (let i = 0; i < 4; i++) {
+                OTP += digits[Math.floor(Math.random() * 10)];
+            }
+            document.getElementById("otp-num").innerHTML = OTP;
+            setTimeout(function () {
+                document.getElementById("otp-num").innerHTML = 'Expeired';
+            }, 60000); // 60 seconds
+            return false; // Prevent form submission
+        }
+        
+
+
+
+        var emailError = document.getElementById("email-error");
+
+        function validEmail() {
+            var email = document.getElementById("email").value;
+            if (email == 0) {
+                emailError.innerHTML = "<br>"+"Email is required";
+                return false
+            }
+            if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+                emailError.innerHTML = "<br>"+"Invalid Email";
+                return false;
+            } else {
+                emailError.innerHTML = '<i class="fa-regular fa-circle-check" style="color: #00ff00;"></i>';
+                return true;
+            }
+        }
+
+        function validForm() {
+            if (!validEmail()) {
+                return false;
+            }
+            return true;
+        }
+
+        // JavaScript code for moving focus to next input and handling backspace
+        // function moveToNextInput(event) {
+        //     const input = event.target;
+        //     if (input.value.length >= input.maxLength) {
+        //         const nextInput = input.nextElementSibling;
+        //         if (nextInput) {
+        //             nextInput.focus();
+        //         }
+        //     }
+        // }
+
+        // function handleBackspace(event) {
+        //     const input = event.target;
+        //     if (event.key === 'Backspace' && input.value.length === 0) {
+        //         const previousInput = input.previousElementSibling;
+        //         if (previousInput) {
+        //             previousInput.focus();
+        //         }
+        //     }
+        // }
+        </script>
+</body></html>
+

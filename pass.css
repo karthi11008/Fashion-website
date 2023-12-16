@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+body{
+    background-image: url("https://cdn.shopify.com/shopifycloud/identity/assets/gradient/gradient-background-c1d8cb3f0925910cfff2493c4442d4e2c1cb6b8a267903342574faee6f70c26c.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    object-fit: cover;
+    height: 100vh;
+}
+@media screen and (max-width: 568px) {
+    body{
+        background-image: none;
+        background-color: white;
+    }
+    
+}
+.container{
+    padding: 50px;
+    width: 500px;
+    /* text-align: center; */
+    background: white;
+    position: absolute;
+    top: 15%;
+    margin-left: auto;
+    margin-left: 35% ;
+    border-radius: 10px;
+    vertical-align: top;
+        
+} 
+@media screen and (max-width: 450px) {
+    .container{
+    margin-left: 1%;
+    top: 13%;
+}}
+@media screen and (min-width: 810px) {
+    .container{
+        margin-left: 18%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .container{
+        margin-left: 35%;
+    }
+    
+}
+
+h1{
+    font-size: 40px;
+    margin: 10px;
+    padding: auto;
+    line-height: 35px;
+}
+hr{
+    margin: 10px;
+    width: 50px;
+    height: 3px;
+    /* margin-left: 55px; */
+    background-color: black;
+}
+
+
+.otp{
+    padding: 10px;
+    line-height: 10px;
+    line-break: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-size: 20px;
+    text-align: center;
+}
+.otp:focus{
+    outline: none;
+    border: 2px solid rgb(0, 0, 0);
+}
+.email-container{
+    padding: 10px;
+    line-height: 10px;
+    line-break: 10px;
+    margin: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    font-size: 20px;
+}
+.email-container:focus{
+    outline: none;
+    border: 2px solid rgb(0, 0, 0);
+}
+.submit-email,.submit-otp{
+    padding: 10px;
+    width: 150px;
+    font-size: 1rem;
+    margin: 0px 10px;
+    background-color: rgba(0, 0, 0, 0.118);
+    /* color: white; */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.submit-email:hover ,.submit-otp:hover{
+    background-color: rgb(82, 59, 59);
+    color: white;
+}
+#otp-num{
+    margin: 10px;
+    font-size: 20px;
+    letter-spacing: 10px;
+    /* border: 3px solid black; */
+    /* padding: 20px; */
+}
+.submit-otp{
+    margin: 15px;
+}

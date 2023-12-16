@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="dim-video-player">
+        <video autoplay loop muted style="width: 100%;
+            height: 100%">
+            <source src="./rainbow.mp4" type="video/mp4">
+        </video>
+    
+    <div class="center">
+        <h1>Login</h1>
+        <form action="./home.html" id="form" class="form" onkeyup="return validForm()" >
+            <div class="input">
+                <input type="text" class="txt_field" onkeyup="ValidName()" id="name" placeholder="User Name">
+                <span id="name-error"></span>
+            </div>
+            
+            <div class="input">
+                <input type="Password" class="txt_field" onkeyup="ValidPassword()" id="password" placeholder="Password">
+                <span class="password-error"></span>
+            </div>
+            
+            <div class="pass">
+                <a href="./forgetpass.html">Forgot Password?</a>
+            
+            </div>
+                <input type="submit" value="Join">
+                <div class="signup_link">
+                    <span id="n"> Not a member?</span> <a href="./signup.html">Signup</a>
+
+                </div>
+        </form>
+    </div>
+</div>
+
+    <!-- <footer style="background-color: black;">
+        <div class="contact-container">
+            <div class="contact-text">
+                <p><span style="font-weight: 700;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;color: #ff0000;">Contact Us Today </span><br><br> &nbsp;&nbsp;&nbsp; Complete the form below to get in touch with us. <br> We are here to help and answer any questions <br> you may have about our products or services.</p>
+            </div>
+            <div class="contact-form">
+                <form action="get" style="background-color: black;margin-left: 20px;">
+
+                    <table border="0">
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Name" required></td>
+                            <td colspan="2"><input type="text" placeholder="Email" readonly></td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Message</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><textarea name="" id="" cols="30" rows="" placeholder="Message..."></textarea></td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="3" align="center" style="padding-top: 10px;"><button type="button" class="btn btn-primary p-2 m-lg-2">Submmit</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="foot">
+            <div>
+                <caption> BIG Commerce</caption>
+                <table border="0">
+                    <tr>
+                        <td><a href="#">Who We Are</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Join Our Team</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Terms &amp; Conditions</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">We Respect Your Privacy</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Fees &amp; Payments</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Returns &amp; Refunds Policy</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Promotions Terms &amp; Conditions</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <caption>Help</caption>
+                <table border="0">
+                    <tr>
+                        <td><a href="#">Track Your Order</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Frequently Asked Questions</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Returns</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Cancellations</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Payments</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Customer Care</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">How Do I Redeem My Coupon</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <caption>Shop by</caption>
+                <table border="0">
+
+                    <tr>
+                        <td><a href="#">Men</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Women</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Kids</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Indie</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Stores</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">New Arrivals</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Brand Directory</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Home</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Collections</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <caption>Follow us on</caption>
+                <table border="0">
+                    <tr>
+                        <td><a href="https://www.facebook.com/">Facebook</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.instagram.com/">Instagram</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.google.com/">Google</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.twitter.com/">Twitter</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="material-symbols-outlined" style="color: wheat;">
+                            home
+                            </span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="foot1">
+            <hr style="color: rgb(38, 223, 223);height: 15px;">
+            <a href="#"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram fa-beat fa-2x" style="color: #ff00ff;"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter fa-beat fa-2x" style="color: #aee9ff;"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube fa-beat fa-2x" style="color: #ff0000;"></i></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin fa-beat fa-2x" style="color: #2e497c;"></i></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp fa-beat fa-2x" style="color: #26d202;"></i></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook fa-beat fa-2x" style="color: #010a6d;"></i></a>
+            <img class="play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" style="width: 200px;height: 80px; margin-left: 580px;">
+            </a>
+            <a href="#">
+  <img class="play" src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-example-preferred.png" alt="Download on the App Store" style="border-radius: 10px;">
+</a>
+            <div align="center">
+                <hr style="color: rgb(248, 252, 252);width: 20%;">
+            </div>
+            <div>
+                <p align="center" style="font-size: 100;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">© 2023 WIFI Fashion B. All rights reserved.</p>
+            </div>
+            <br>
+            
+        </div>
+    </footer> -->
+
+
+    <script>
+        var nameError = document.getElementById("name-error");
+        var passwordError = document.getElementById("password-error");
+
+        function ValidName(){
+            var Name=document.getElementById("name").value;
+            if(Name.length==0){
+                nameError.innerHTML="Name is required";
+                return false;
+            }
+           else{
+            nameError.innerHTML="";
+            return true;
+           }
+        }
+        
+        function ValidatePassword(){
+            var Password = document.getElementById("password").value;
+            if(Password.length==0){
+                passwordError.innerHTML="password is required";
+                return false;
+            }
+            if(Password.length<8){
+                passwordError.innerHTML="Password must be at least 8 characters";
+                return false;
+            }
+            if( !Password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)){
+                passwordError.innerHTML="Password must contain at least 2 uppercase and 2 lowercase characters";
+                return false;
+            }
+            else{
+            passwordError.innerHTML="";
+            return true;
+            }
+        }
+            function validForm(){
+                if(!ValidName() || !ValidatePassword()){
+                    return false;
+                }
+                else{
+                    return true;
+                }
+            }
+    </script>
+
+</body>
+</html>
